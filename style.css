@@ -6,7 +6,20 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 }
-
+.container {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  max-width: 40rem;
+  margin: 3rem auto;
+  color: #636363;
+  padding: 2rem;
+  background: #ffffcc;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #636363;
+  animation: fade-in 0.5s ease-in-out;
+  position: relative;
+  z-index: 33;
+}
 form {
 	align-items: center;
  background-color: red;
