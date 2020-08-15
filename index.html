@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta charset="utf-8">
-    <title>Survey-form</title>
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>FreeCodeCamp - Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
   </head>
   <body>
-<div class="container">   
- <h1 id="title">FreeCodeCamp</h1>
-    <p id="description">This is a Survey Form</p>
+   
+      <h1 id="title">Survey Form</h1>
+    <div class="container">
+    <p id="description">Please fill out the form </p>
 
     <form
       id="survey-form"
@@ -52,19 +52,18 @@
 
         <div class="words">
           <div class="label">
-            <label for="number" id="number-label">Number: </label>
+            <label for="age" id="number-label">Age: </label>
           </div>
 
           <div class="forms">
             <input
               type="number"
-              name="number"
+              name="age"
               id="number"
-              placeholder="Enter your age.."
+              placeholder="Enter your age"
               class="input-field"
               min="1"
               max="99"
-              required
             />
           </div>
         </div>
@@ -79,7 +78,7 @@
             <div class="dropdown">
               <select id="dropdown" name="dropdown" class="dropdown">
                 <option selected="true" disabled value
-                  >Select an option.</option
+                  >Select current role.</option
                 >
                 <option value="student">Student</option>
                 <option value="job">Full Time Job</option>
@@ -89,16 +88,14 @@
               </select>
             </div>
           </div>
-          <!-- rowTab -->
+         
         </div>
         <div class="radio-section">
-          <div class="words">
-            <div class="label">
-              <label for="userRating" id="radio-label"
-                >* How likely is that you would recommend FreeCodeCamp to a
-                friend?
-              </label>
-            </div>
+            <div class="radio-label">
+              <label for="userRatings" id="radio-label"
+                > Would you recommend FCC to your friends ?
+              </label> 
+            </div> 
 
             <div class="forms">
               <div class="box">
@@ -109,7 +106,7 @@
                         type="radio"
                         name="radio-buttons"
                         value="1"
-                        class="userRatings"
+                        class="userR "
                     /></label>
                   </li>
 
@@ -119,7 +116,7 @@
                         type="radio"
                         name="radio-buttons"
                         value="2"
-                        class="userRatings"
+                        class="userR "
                     /></label>
                   </li>
 
@@ -129,26 +126,23 @@
                         type="radio"
                         name="radio-buttons"
                         value="3"
-                        class="userRatings"
+                        class="userR"
                     /></label>
                   </li>
                 </ul>
               </div>
             </div>
-            <!-- rightTab - Radio Button Section. -->
-          </div>
-          <!-- rowTab - Radio Button Section. -->
         </div>
-        <!-- Radio - Section close tag. -->
+       
 
         <div class="words" id="checkbox">
-          <div class="label">
+          <div class="checkbox-label">
             <label for="preferences"
               >Things that should be improved in the future. (Check all that
               apply):
             </label>
           </div>
-          <div class="forms">
+          <div class="checkbox-form">
             <ul id="preferences" style="list-style: none;">
               <li class="checkbox">
                 <label
@@ -156,7 +150,7 @@
                     type="checkbox"
                     name="prefer"
                     value="1"
-                    class="userRatings"
+                    class="userR"
                   />Front-End Projects</label
                 >
               </li>
@@ -167,7 +161,7 @@
                     type="checkbox"
                     name="prefer"
                     value="2"
-                    class="userRatings"
+                    class="userR "
                   />Back-End Projects</label
                 >
               </li>
@@ -178,7 +172,7 @@
                     type="checkbox"
                     name="prefer"
                     value="3"
-                    class="userRatings"
+                    class="userR"
                   />Data Visualization</label
                 >
               </li>
@@ -188,19 +182,8 @@
                   ><input
                     type="checkbox"
                     name="prefer"
-                    value="4"
-                    class="userRatings"
-                  />Challenges</label
-                >
-              </li>
-
-              <li class="checkbox">
-                <label
-                  ><input
-                    type="checkbox"
-                    name="prefer"
                     value="5"
-                    class="userRatings"
+                    class="userR "
                   />Open Source Community</label
                 >
               </li>
@@ -211,7 +194,7 @@
                     type="checkbox"
                     name="prefer"
                     value="6"
-                    class="userRatings"
+                    class="userR "
                   />Gitter Help Rooms</label
                 >
               </li>
@@ -222,7 +205,7 @@
                     type="checkbox"
                     name="prefer"
                     value="7"
-                    class="userRatings"
+                    class="userR"
                   />Videos</label
                 >
               </li>
@@ -233,22 +216,50 @@
                     type="checkbox"
                     name="prefer"
                     value="8"
-                    class="userRatings"
+                    class="userR "
                   />City Meetups</label
                 >
               </li>
 
+              <li class="checkbox">
+                <label
+                  ><input
+                    type="checkbox"
+                    name="prefer"
+                    value="9"
+                    class="userR"
+                  />Wiki</label
+                >
+              </li>
 
-              
+              <li class="checkbox">
+                <label
+                  ><input
+                    type="checkbox"
+                    name="prefer"
+                    value="10"
+                    class="userR"
+                  />Forum</label
+                >
+              </li>
+
+              <li class="checkbox">
+                <label
+                  ><input
+                    type="checkbox"
+                    name="prefer"
+                    value="11"
+                    class="userR"
+                  />Additional Courses</label
+                >
+              </li>
             </ul>
           </div>
         </div>
 
         <div id="textarea">
           <div class="words">
-            <div class="label">
-              <label for="comments">lol</label>
-            </div>
+              <label class="textarea-label" for="comments">Any Comments or Suggestions?</label>
             <div class="forms">
               <textarea
                 id="comments"
@@ -261,11 +272,10 @@
           </div>
         </div>
 
-        <input id="submit" value="Submit" type="submit">
+        <button id="submit" type="submit">Submit</button>
       </div>
-      <!-- Background div element - Close tag. -->
     </form>
-    </div>
+   </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
