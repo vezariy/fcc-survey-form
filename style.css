@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+form {
+	align-items: center;
+ background-color: red;
+ display: block;
+
+}
+body,hmtl {
+  background-size: cover;
+  min-width: 350px;
+  font-family: Helvetica neue, roboto;
+  background-color: rgb(102, 186, 214);
+  background-image: url("http://getwallpapers.com/wallpaper/full/2/b/3/118380.jpg");
+	background-color: rgb(0,0,0,.6);
+ 	background-blend-mode: normal;
+	 color: white;
+
+}
+#title {
+  font-family:"Rock Salt", cursive;
+  text-align: center;
+	font-size: 70px;
+	margin: 0 auto;
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	margin-top: 2%;
+}
+#description {
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	margin-top: 3%;
+}
+
+#survey-form {
+	padding: 20px;
+	font-size: 20px;
+} 
+
+.label {
+  	display: inline-block;
+	text-align: right;
+	width: 42%;
+	padding: 5px;
+	font-family: 'Raleway', sans-serif;
+}
+.forms {
+  display: inline-block;
+	text-align: left;
+	width: 48%;
+	vertical-align: middle;
+}
+.input-field {
+  height: 20px;
+	width: 280px;
+	padding: 20px;
+	margin: 10px;
+	border: 2px solid rgb(0,0,0,.0);
+	border-radius: 5px;
+	font-family: 'Raleway', sans-serif;
+	background-color: rgb(0,0,0,.2);
+	color: white;
+}
+
+#dropdown {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 20px;
+}
+.dropdown {
+	display: inline-block;
+	position: absolute;
+	width: 20%;
+	margin-top: 2%;
+	padding: 10px;
+	background-color: rgb(0,0,0,.0);
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	border-radius: 5px;
+}
+.dropdown option {
+	background-color: black;
+	padding: 15px;
+	font-size: 20px;
+}
+.radio-section {
+	display: inline-block;
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	padding: 30px;
+	margin-left: 24.5%;
+	margin-top: 5%;
+}
+.userRatings
+{
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: white;
+     color: #666;
+     top: 3px;
+     height: 20px;
+     width: 20px;
+     border: 0;
+     border-radius: 15px;
+     cursor: pointer;     
+     margin-right: 7px;
+     outline: none;
+     animation: glowing 3000ms infinite;
+}
+#checkbox {
+	margin-left: 20%;
+	margin-bottom: 20%;
+}
+
+#dropdown-section {
+	margin-top: 7%;
+}
+
+
+.radio-section {
+	margin-top: 9%;
+}
+
+textarea {
+  resize: none;
+  border: 1px solid white;
+}
+
+#textarea {
+	margin: 0 auto;
+	margin-top: -20%;
+	margin-right: -25%;
+	margin-bottom: 200px;
+}
+
+#submit {
+	display: flex;
+	margin: 0 auto;
+	margin-top: -10%;
+	margin-bottom: 50px;
+	justify-content: center;
+	padding: 10px;
+	height: 50px;
+	width: 150px;
+	background-color: black;
+	border: 1px solid white;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+button:hover {
+	background-color: white;
+	color: black;
+	animation-name: button;
+	animation-duration: 1s;
+}
+
+@keyframes input {
+	0% {
+		background-color: black;
+		color: white;
+	}
+	100% {
+		background-color: white;
+		color: black;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.labels {
+		width: 30%;
+		margin-bottom: 5%;
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 1020px) {
+	.labels {
+		width: 30%;
+	}
+
+	#dropdown {
+		width: 100%;
+	}
+}
